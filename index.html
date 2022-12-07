@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Metalicas-Baruj">
+    <meta name="keywords" content="Canales, Campanas, Ductos, cotizar, Metalicas Baruj">
+    <meta name="description" content="Solución a los tiempos dificiles">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilo-patodo.css">
+    <link rel="stylesheet" href="css/bootstrap-5.2.0-dist/css/bootstrap.min.css">
+
+    <title>Metalicas-Baruj</title>
+    <link rel="icon"  href="recursos/favicon-logo.png">
+</head>
+<body>
+    <!-- BARRA DE NAV -->
+    <header>
+        <nav class="nav-principal px-5">
+            <a href="index.html" class="logo">
+                <picture>
+                    <source media="(min-width: 760px)" srcset="recursos/logotipo-horizontal.png">
+                    <img src="recursos/logotipo-claro-l.png" alt="logotipo de metalicas BAruj">
+                </picture>
+            </a>
+
+            <div  class="menu" onclick="menuopen()">
+                <img alt="menu" src="recursos/iconos/menu_hamburguesa-blanco.png">
+            </div>
+
+            <ul id="lista" class="barra_nav close">
+                <li class="btn_txt" id="navegador_xd" onclick="bt_select(this.id)">
+
+                    <a href="#slider_primer" id="navegador1" >INICIO</a>
+                </li>
+                <li class="btn_txt" id="navegador_xduno" onclick="bt_select(this.id)">
+
+                    <a href="canales.html" id="navegador2" >CANALES</a>
+                </li>
+                <li class="btn_txt" id="navegador_xddos" onclick="bt_select(this.id)" >
+
+                    <a href="campanas.html" id="navegador3" >CAMPANAS</a>
+                </li>
+                <li class="btn_txt" id="navegador_xdtres" onclick="bt_select(this.id)">
+
+                    <a href="ductos.html" id="navegador4" >DUCTOS</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<!-- SLIDER -->
+    <section id="slider_primer"  class=" imagen-header container-fluid">
+        <!-- SLIDER -->
+
+
+                    <div class="parrafo-flotante  d-lg-flex d-md-none d-sm-none">
+                        <p>Por compras mayores a $700.000 se incluye transporte gratuito</p>
+                    </div>
+
+            </div>
+
+    </section>
+    <div class="texto-en-mediano d-lg-none d-md-flex ">
+        <p>Por compras mayores a $700.000 se incluye transporte gratuito</p>
+    </div>
+<!-- PRIMERA SECCION -->
+
+    <section id="quienes_somos" class="container-fluid mb-lg-0 mb-md-5 mb-sm-5">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <div class="row parte_rojo">
+                    <h1 class="col-lg-12 col-sm-12 text-center quien">¿QUIÉNES SOMOS?</h1>
+                    <div class="videito col-lg-7 col-sm-8 h-md-100 h-sm-100">
+                        <iframe  src="https://www.youtube.com/embed/qvujPFGehck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-6  col-sm-12 texto_index "><p class="parte_texto">Somos una micro-empresa multifuncional especializada en todo lo relacionado en metales, como lo son:<br>estructuras, exhibiciones metalicas, campanas ductos, puertas, etc.<br>Para el mejoramiento y funcionamiento de diferentes areas como restaurantes, cafeterias, almacenes, hogares, incluso en areas como construcción.</p></div>
+        </div>
+
+
+    </section>
+
+<!-- SECCION TRES PRODUCTOS -->
+
+    <section id="ofrecemos" class="conteiner-fluid mt-lg-0 mt-md-5 mt-sm-5">
+        <h2 class="text-center w-100 py-5" style="margin-bottom: 0;">PRODUCTOS QUE OFRECEMOS</h2>
+
+        <!-- <div class="row conjunto_tres"
+
+        style="margin-left: 0; margin-right: 0; padding-left:0; padding-right: 0;" >
+            <div class="col-12 otros-tres">
+                <div class="row tres_productos">
+                    <div class="col-lg-6 col-md-12 donde_img order-lg-1 order-md-2" style="padding-left: 0; padding-right:0;">
+                        <img src="recursos/productos/canal.jpeg" alt="Imagen de una canal de lluvia">
+                    </div>
+                    <div class="col-lg-6 col-md-12 parte_de_color order-lg-2 order-md-1 px-lg-5">
+                        <h3>CANALES</h3>
+                        <p>La función de las canales es conducir un flujo de agua en los tejados o en el desagüe, para que de esta manera no haya un cumulo de agua evitando daños en la infraestructura de su casa. </p>
+                        <a class="boton_color px-5" href="">ver más</a></div>
+                </div>
+            </div>
+            <div class="col-12 otros-tres">
+                <div class="row tres_productos ">
+                    <div class="col-lg-6 col-md-12 order-lg-2 order-md-1 donde_img segundo_p" style="padding-left: 0; padding-right:0;">
+                        <img src="recursos/productos/campana-negra.jpeg" alt="Imagen de una campana extractora"></div>
+                    <div class="col-lg-6 col-md-12 parte_de_color order-lg-1  segundo_pt px-lg-5">
+                        <h3>CAMPANAS</h3>
+                        <p>Las campanas se encargan de recolectar todos los gases no deseados, como gases toxicos, humo de comida entre otros, estos se evian a un ducto para así ser expualsados del lugar.</p>
+                        <a class="boton_color px-5" href="">ver más</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 otros-tres">
+                <div class="row tres_productos">
+                    <div class="col-lg-6 col-md-12 donde_img order-lg-1 order-md-2" style="padding-left: 0; padding-right:0;">
+                        <img src="recursos/productos/ducto.jpeg" alt="Imagen de un ducto">
+                    </div>
+                    <div class="col-lg-6 col-md-12 parte_de_color  order-lg-2 order-md-1 px-lg-5">
+                        <h3>DUCTOS</h3>
+                        <p>Los ductos son los encargados de dar ventilación a lugares donde no haya gran consentracion de oxigeno como tuneles, además de enviar fuera vapores calientes.</p>
+                        <a class="boton_color px-5" href="">ver más</a>
+                    </div>
+                </div>
+
+            </div>
+        </div> -->
+
+ <div class="row lostres" style="margin-right:0 ; margin-left:0; padding-left: 0; padding-right: 0;">
+    <div class="col-12 productos" style="margin-right:0 ; margin-left:0;">
+        <div class="row divisor canal" style="margin-right:0 ; margin-left:0;">
+            <div class="col-lg-6 col-md-12 imagen-productos imagen-canal"><img src="recursos/productos/canal-de-fuera.jpeg" alt=""></div>
+            <div class="col-lg-6 col-md-12 texto-productos texto-canal px-5">
+                <h3>CANALES</h3>
+                <p>La función de las canales es conducir un flujo de agua en los tejados o en el desagüe, para que de esta manera no haya un cúmulo de agua evitando daños en la infraestructura de su casa. </p>
+                <a class="boton_color px-5" href="canales.html">ver más</a>
+            </div>
+        </div>
+        <div class="row divisor campana" style="margin-right:0 ; margin-left:0;">
+            <div class="col-lg-6 col-md-12 order-lg-5 imagen-productos imagen-campana"><img src="recursos/productos/campana-negra.jpeg" alt=""></div>
+            <div class="col-lg-6 col-md-12 order-lg-1  texto-productos texto-campana px-5 ">
+
+                <h3>CAMPANAS</h3>
+                <p>Las campanas tienen la función de recolectar vapores, o gases que puedan llegar a acumularse en el interior y expulsarlos </p>
+                <a class="boton_color px-5" href="campanas.html">ver más</a>
+            </div>
+        </div>
+        <div class="row divisor ducto" style="margin-right:0 ; margin-left:0; padding-left: 0; padding-right: 0;">
+            <div class="col-lg-6 col-md-12 imagen-productos imagen-ducto"><img src="recursos/productos/ducto.jpeg" alt=""></div>
+            <div class="col-lg-6 col-md-12 texto-productos texto-ducto px-5">
+                <h3>DUCTOS</h3>
+                <p>Son conductos los cuales se pueden usar para ventilar una zona como tuneles o extraer vapores y gases de algún sitio </p>
+                <a class="boton_color px-5" href="ductos.html">ver más</a>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+    </section>
+<!-- FOOTER -->
+<footer>
+
+    <div class="row  pt-lg-5 footer" style="padding-left:0; padding-right:0;">
+
+        <div class="col-lg-3 col-md-12 my-5 mapa px-5">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d497.00690571866176!2d-74.03268898065585!3d4.760403045614115!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1668741420675!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <p>Nos encontramos en <strong>Calle 183 #10-12</strong></p>
+        </div>
+
+        <div class="col-lg-3 col-md-12 mt-5 pt-5 d-flex">
+            <div class="d-flex icono-wsp">
+                <a target="_blank" onclick="whatsapp()" class="icono_whatsapp">
+                    <img src="recursos/iconos/whatsapp.png" alt="icono de whatsapp">
+                </a>
+                <a target="_blank" onclick="whatsapp()" class="texto_icono_wsp">
+                COTIZA CON NOSOTROS
+                </a>
+            </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-12 my-5 iconos_tales" style="padding-left:0; padding-right:0;">
+            <div class="row lo_otro" style="padding-left:0; padding-right:0;">
+                <div class="siguenos w-100 d-lg-none d-md-block text-center">SIGUENOS EN NUESTRAS REDES</div>
+                <div class="row iconos_esos w-lg-50 p-lg-5 p-lg-0" style="padding-left:0; padding-right:0;">
+                    <a  target="_blank" href="facebook.com" class="col-lg-5 col-2 iconos-de-redes">
+                        <img src="recursos/iconos/facebook.png" alt="icono de Facebook">
+                    </a>
+
+                    <a  target="_blank" href="" class="col-lg-5  col-2 iconos-de-redes">
+                        <img src="recursos/iconos/instagram.png" alt="icono de Instagram">
+                    </a>
+
+                    <a  target="_blank" href="" class="col-lg-5 col-2 iconos-de-redes">
+                        <img src="recursos/logotipo-claro-l.png" alt="icono de metalicas baruj">
+                    </a>
+
+                    <a  target="_blank" href="" class="col-lg-5  col-2 iconos-de-redes">
+                        <img src="recursos/iconos/twitter.png" alt="icono de Twitter">
+                    </a>
+            </div>
+            </div>
+
+
+        </div>
+    </div>
+    <p class="pagina_creada">pagina creada por <strong>Metalicas Baruj</strong> el <time>2022</time></p>
+</footer>
+
+
+</body>
+<script src="css/bootstrap-5.2.0-dist/js/bootstrap.js"></script>
+<script src="javascript/menuh.js"></script>
+</html>

@@ -1,0 +1,10 @@
+#navegador_xdtres{
+    border-bottom: 2px solid white;
+    transition: 0.4s;
+}
+
+
+#navegador_xdtres:hover{
+    border-bottom: 6px solid white;
+
+}

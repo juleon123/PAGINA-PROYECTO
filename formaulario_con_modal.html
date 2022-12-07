@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.min.css">
+</head>
+<body>
+
+  <h1>formaulario CON MODAL</h1>
+    <form id="nombre_de_formaulario">
+        <input type="hidden" value="input invisible" name="uno" class="w-100">
+
+        <label>Numero: </label>
+        <input type="number" value="input de numeros" name="dos" class="w-100">
+
+
+        <label>Lista select: </label>
+        <select name="tres" id="" class="w-100">
+            <option value="00"> --</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+
+        </select>
+        <label>Area de texto mensaje</label>
+        <textarea name="cuatro" class="w-100"></textarea>
+    </form>
+
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#cotzador_modal" onclick="add('nombre_de_formaulario')" >COTIZAR</button>
+
+
+    <!-- MODAL -->
+
+    <div class="modal fade" id="cotzador_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">COTIZACION</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+            <h2>Ya casi es tuyo</h2>
+
+                <p id="mensaje_de_cotizacion"></p>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal" onclick="openwin()" >Si lo quiero</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+</body>
+
+<script src="bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
+</html>
+
+<!--MI SCRIPT -->
+<script>
+
+   function add(id){
+
+    let uno = document.forms[id]["uno"].value;
+    let dos = document.forms[id]["dos"].value;  
+    let tres = document.forms[id]["tres"].value;
+    let cuatro = document.forms[id]["cuatro"].value;
+
+    let txt = " • Tu producto tal  " + uno + " texto  " + dos + "texto2 " + tres + "tiene un coto de";
+
+           // vaciar modal
+           document.getElementById("mensaje_de_cotizacion").innerHTML = "";
+            document.getElementById("mensaje_de_cotizacion").innerHTML = txt;
+
+       }
+
+
+   let wame = "https://wa.me/573004176447?text=Estoy interesado en los siguientes productos:%0A ";
+
+   function openwin(){
+       let mensaje =  document.getElementById("mensaje_de_cotizacion").textContent;
+       wame+= mensaje;
+       alert("te contactaremos con un asesor comercial via wa");
+        window.open(wame);
+   }
+
+
+</script>

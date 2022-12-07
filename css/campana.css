@@ -1,0 +1,25 @@
+#navegador_xddos{
+    border-bottom: 2px solid white;
+    transition: 0.4s;
+}
+
+
+#navegador_xddos:hover{
+    border-bottom: 6px solid white;
+
+}
+#materiales .materiales_informacion .col-12 .row .barras .barra_azul .primera_barra{
+    width: 0;
+
+}
+
+
+#materiales:hover .materiales_informacion .col-12 .row .barras .barra_azul .primera_barra{
+    width: 20%;
+    background:linear-gradient(to right,var(--azul-claro) , var(--azul-oscuro) 70%);
+}
+#materiales:hover .materiales_informacion .col-12 .row .barras .barra_azul .segunda_barra{
+    width: 80%;
+    background:linear-gradient(to right,var(--azul-claro) , var(--azul-oscuro) 70%);
+
+}
